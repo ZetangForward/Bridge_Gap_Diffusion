@@ -12,8 +12,6 @@ This is the official code for [<font size=3>Can Diffusion Model Achieve Better P
 
 # Dataset & Model Prepartion
 
-
-
 ## Dataset
 We provide the download link for all the data used in our paper:
 
@@ -21,9 +19,9 @@ We provide the download link for all the data used in our paper:
 |------|---------| ---------| ---------|
 |Text Simplification| [WIKI AUTO](https://github.com/chaojiang06/wiki-auto) | 677k | [download](https://drive.google.com/drive/folders/1BlWtD1UbnL_ef06Riq-gABlL0Zb50s-d?usp=sharing)|
 | Paraphrase | [Quora Question Pairs](https://www.kaggle.com/c/quora-question-pairs) | 114k | [download](https://drive.google.com/drive/folders/122YK0IElSnGZbPMigXrduTVL1geB4wEW)|
-| Story Generation | [ROC Story]() | 88k | [download](TODO) | 
-| Question Generation | [Quasar-T]() | 117k | [download](TODO) | 
-| E2E (Semantic / Syntax) | [E2E]() | 88k | [download](TODO) | 
+| Story Generation | [ROC Story](https://cs.rochester.edu/nlp/rocstories/) | 88k | [download](TODO) | 
+| Question Generation | [Quasar-T](https://drive.google.com/drive/folders/122YK0IElSnGZbPMigXrduTVL1geB4wEW?usp=sharing) | 117k | [https://drive.google.com/drive/folders/122YK0IElSnGZbPMigXrduTVL1geB4wEW?usp=sharing](TODO) | 
+| E2E (Semantic / Syntax) | [E2E](http://www.macs.hw.ac.uk/) | 88k | [download](TODO) | 
 
 Please download the data and place under the ``./datasets`` folder
 
@@ -39,6 +37,13 @@ Please refer to the following repos for more details:
 
 # Quick Start
 We provide the code for post-training on ROC story dataset
+
+## Environment
+```
+conda create -n diffsuion python=3.9
+conda activate diffusion
+pip install -r requirement.txt
+```
 
 ## Training
 We conduct experiment with 4 NVIDIA-A100(40GB)
