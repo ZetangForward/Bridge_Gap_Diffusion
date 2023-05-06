@@ -1,11 +1,18 @@
 # Bridging the Gap between Training and Inference for Diffusion Model
 
-This is the official code for [<font size=3>Can Diffusion Model Achieve Better Performance in Text Generation? Bridging the Gap between Training and Inference!</font>]()
+This is the official code for [<font size=3>Can Diffusion Model Achieve Better Performance in Text Generation? Bridging the Gap between Training and Inference!</font>]() (release soon)
 
-# Model Architecture
-<p align="center"><img src="./assets/dis_diffusion_v2.png" alt="Logo"></p>
+# Highlight
+
+## Model Architecture
+<p align="center"><img src="./assets/model_arch.png" alt="Logo"></p>
+
+## Down-Sampling Strategy
+<p align="center"><img src="./assets/adaptive_sampling.png" alt="Logo"></p>
 
 # Dataset & Model Prepartion
+
+
 
 ## Dataset
 We provide the download link for all the data used in our paper:
@@ -21,24 +28,56 @@ We provide the download link for all the data used in our paper:
 Please download the data and place under the ``./datasets`` folder
 
 ## Backbone Model
+Please refer to the following repos for more details:
 
-# Post-train Roc
+[DiffuSeq: Sequence to Sequence Text Generation with Diffusion Models](https://github.com/Shark-NLP/DiffuSeq)
 
+[Diffusion-LM Improves Controllable Text Generation](https://github.com/XiangLi1999/Diffusion-LM)
+
+
+# Quick Start
+We provide the code for post-training on ROC story dataset
+
+## Training
+We conduct experiment with 4 NVIDIA-A100(40GB)
 ```bash
 cd scripts
-export CUDA_VISIBLE_DEVICES=0,1,2,3
-python -m torch.distributed.launch --nproc_per_node=4 \
---master_port=12238 --use_env run_train.py --diff_steps 2000 \
---microbatch 100 --lr 0.0001 --learning_steps 320000 --save_interval 2500 \
---seed 109 --noise_schedule sqrt --hidden_dim 128 --bsz 100 \
---dataset roc --data_dir datasets/ROCstory --vocab bert --seq_len 128 \github
---simi_penalty l2_noise_random --simi_lambda -1 --simi_step 10 --simi_noise 0.05 \
---resume_checkpoint ../ori_ckps/roc/ema_0.9999_240000.pt \
---schedule_sampler lossaware --notes roc
+export CUDA_VISIBLE_DEVICES=0,1,2,3;
+
+DISTRIBUTE_ARGS="
+    --nproc_per_node=4 \
+    --use_env
+"
+
+TRAIN_ARGS="
+    --diff_steps 2000 \
+    --microbatch 100 \
+    --lr 0.0001 \
+    --learning_steps 320000 \
+    --save_interval 2500 \
+    --seed 109 \
+    --noise_schedule sqrt \
+    --hidden_dim 128 \
+    --bsz 100 \
+    --dataset roc \
+    --data_dir datasets/ROCstory \
+    --vocab bert \
+    --seq_len 128 \
+    --simi_penalty l2_noise_random \
+    --simi_lambda -1 \
+    --simi_step 10 \
+    --simi_noise 0.05 \
+    --resume_checkpoint /path/to/checkpoint \
+    --schedule_sampler lossaware \
+    --notes roc
+"
+
+python -m torch.distributed.launch $DISTRIBUTE_ARGS run_train.py $TRAIN_ARGS
+
 ```
 
 
-# Inference Roc
+# Inference
 
 ```bash
 python sample_seq2seq.py \
