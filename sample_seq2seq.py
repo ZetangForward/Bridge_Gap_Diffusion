@@ -57,7 +57,7 @@ def main():
 
     # mycode
     args.diffusion_steps = args.step
-    args.timestep_respacing = args.decode_respacing
+    args.ƒ = args.decode_respacing
 
 
     logger.log("### Creating model and diffusion...")

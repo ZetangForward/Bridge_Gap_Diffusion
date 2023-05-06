@@ -1,0 +1,866 @@
+2023-01-16 14:25:03.976505: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-01-16 14:25:04.231012: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2023-01-16 14:25:04.231065: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-01-16 14:25:05.136789: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2023-01-16 14:25:05.136896: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2023-01-16 14:25:05.136914: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-01-16 14:25:06.145904: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2023-01-16 14:25:06.146018: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublas.so.11'; dlerror: libcublas.so.11: cannot open shared object file: No such file or directory
+2023-01-16 14:25:06.146082: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublasLt.so.11'; dlerror: libcublasLt.so.11: cannot open shared object file: No such file or directory
+2023-01-16 14:25:06.146182: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusolver.so.11'; dlerror: libcusolver.so.11: cannot open shared object file: No such file or directory
+2023-01-16 14:25:06.146243: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusparse.so.11'; dlerror: libcusparse.so.11: cannot open shared object file: No such file or directory
+2023-01-16 14:25:06.146303: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudnn.so.8'; dlerror: libcudnn.so.8: cannot open shared object file: No such file or directory
+2023-01-16 14:25:06.146333: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+['/data/tzc/DiffuSeqs/DiffuSeq-posttrain/generation_outputs/diffuseq_qqp_h128_lr0.0001_t2000_sqrt_lossaware_seed109_qqp20230114-04:18:02/ema_0.9999_100000.pt.samples/adp_20/mbr.jsonl']
+  0%|          | 0/1 [00:00<?, ?it/s]Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+Some weights of the model checkpoint at microsoft/deberta-xlarge-mnli were not used when initializing DebertaModel: ['pooler.dense.weight', 'pooler.dense.bias', 'classifier.weight', 'classifier.bias']
+- This IS expected if you are initializing DebertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/data/tzc/DiffuSeqs/DiffuSeq-posttrain/generation_outputs/diffuseq_qqp_h128_lr0.0001_t2000_sqrt_lossaware_seed109_qqp20230114-04:18:02/ema_0.9999_100000.pt.samples/adp_20/mbr.jsonl
+calculating scores...
+computing bert embedding.
+
+  0%|          | 0/34 [00:00<?, ?it/s][A
+  3%|▎         | 1/34 [00:00<00:14,  2.33it/s][A
+  6%|▌         | 2/34 [00:00<00:10,  3.14it/s][A
+  9%|▉         | 3/34 [00:00<00:08,  3.53it/s][A
+ 12%|█▏        | 4/34 [00:01<00:07,  3.93it/s][A
+ 15%|█▍        | 5/34 [00:01<00:06,  4.22it/s][A
+ 18%|█▊        | 6/34 [00:01<00:06,  4.45it/s][A
+ 21%|██        | 7/34 [00:01<00:05,  4.55it/s][A
+ 24%|██▎       | 8/34 [00:01<00:05,  4.66it/s][A
+ 26%|██▋       | 9/34 [00:02<00:05,  4.76it/s][A
+ 29%|██▉       | 10/34 [00:02<00:04,  5.01it/s][A
+ 32%|███▏      | 11/34 [00:02<00:04,  5.18it/s][A
+ 35%|███▌      | 12/34 [00:02<00:03,  5.62it/s][A
+ 38%|███▊      | 13/34 [00:02<00:03,  5.60it/s][A
+ 41%|████      | 14/34 [00:02<00:03,  5.90it/s][A
+ 44%|████▍     | 15/34 [00:03<00:03,  6.10it/s][A
+ 47%|████▋     | 16/34 [00:03<00:02,  6.25it/s][A
+ 50%|█████     | 17/34 [00:03<00:02,  6.07it/s][A
+ 53%|█████▎    | 18/34 [00:03<00:02,  6.25it/s][A
+ 56%|█████▌    | 19/34 [00:03<00:02,  6.31it/s][A
+ 59%|█████▉    | 20/34 [00:03<00:02,  6.43it/s][A
+ 62%|██████▏   | 21/34 [00:04<00:01,  6.68it/s][A
+ 65%|██████▍   | 22/34 [00:04<00:01,  6.31it/s][A
+ 68%|██████▊   | 23/34 [00:04<00:01,  6.40it/s][A
+ 71%|███████   | 24/34 [00:04<00:01,  6.64it/s][A
+ 74%|███████▎  | 25/34 [00:04<00:01,  6.26it/s][A
+ 76%|███████▋  | 26/34 [00:04<00:01,  6.58it/s][A
+ 79%|███████▉  | 27/34 [00:04<00:01,  6.83it/s][A
+ 82%|████████▏ | 28/34 [00:05<00:00,  7.09it/s][A
+ 85%|████████▌ | 29/34 [00:05<00:00,  7.16it/s][A
+ 88%|████████▊ | 30/34 [00:05<00:00,  7.21it/s][A
+ 91%|█████████ | 31/34 [00:05<00:00,  7.28it/s][A
+ 94%|█████████▍| 32/34 [00:05<00:00,  7.45it/s][A
+ 97%|█████████▋| 33/34 [00:05<00:00,  6.87it/s][A100%|██████████| 34/34 [00:05<00:00,  5.80it/s]
+computing greedy matching.
+
+  0%|          | 0/18 [00:00<?, ?it/s][A
+ 50%|█████     | 9/18 [00:00<00:00, 89.57it/s][A100%|██████████| 18/18 [00:00<00:00, 94.08it/s]done in 6.06 seconds, 180.11 sentences/sec
+/data/tzc/DiffuSeqs/DiffuSeq-posttrain/generation_outputs/diffuseq_qqp_h128_lr0.0001_t2000_sqrt_lossaware_seed109_qqp20230114-04:18:02/ema_0.9999_100000.pt.samples/adp_20/mbr.jsonl
+nan count:0:1091
+nan count:0:1091
+
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+bleu-1:   0%|          | 0/1000 [00:00<?, ?it/s][A
+bleu-1:   0%|          | 3/1000 [00:00<00:35, 27.79it/s][A
+bleu-1:   4%|▎         | 36/1000 [00:00<00:05, 170.07it/s][A
+bleu-1:   8%|▊         | 80/1000 [00:00<00:03, 254.95it/s][A
+bleu-1:  12%|█▏        | 124/1000 [00:00<00:03, 287.87it/s][A
+bleu-1:  17%|█▋        | 168/1000 [00:00<00:02, 313.80it/s][A
+bleu-1:  21%|██        | 212/1000 [00:00<00:02, 292.98it/s][A
+bleu-1:  26%|██▌       | 256/1000 [00:00<00:02, 282.38it/s][A
+bleu-1:  30%|███       | 300/1000 [00:01<00:02, 296.10it/s][A
+bleu-1:  34%|███▍      | 344/1000 [00:01<00:02, 301.82it/s][A
+bleu-1:  39%|███▉      | 388/1000 [00:01<00:01, 309.12it/s][A
+bleu-1:  43%|████▎     | 432/1000 [00:01<00:01, 314.74it/s][A
+bleu-1:  48%|████▊     | 476/1000 [00:01<00:01, 322.02it/s][A
+bleu-1:  52%|█████▏    | 520/1000 [00:01<00:01, 324.89it/s][A
+bleu-1:  56%|█████▋    | 564/1000 [00:01<00:01, 328.85it/s][A
+bleu-1:  61%|██████    | 608/1000 [00:01<00:01, 333.24it/s][A
+bleu-1:  65%|██████▌   | 652/1000 [00:01<00:01, 336.44it/s][A
+bleu-1:  70%|██████▉   | 696/1000 [00:02<00:00, 337.40it/s][A
+bleu-1:  74%|███████▍  | 740/1000 [00:02<00:00, 340.84it/s][A
+bleu-1:  78%|███████▊  | 784/1000 [00:02<00:00, 338.40it/s][A
+bleu-1:  83%|████████▎ | 828/1000 [00:02<00:00, 323.51it/s][A
+bleu-1:  87%|████████▋ | 872/1000 [00:02<00:00, 323.44it/s][A
+bleu-1:  92%|█████████▏| 916/1000 [00:02<00:00, 325.60it/s][A
+bleu-1:  96%|█████████▌| 960/1000 [00:02<00:00, 326.75it/s][Ableu-1: 100%|██████████| 1000/1000 [00:03<00:00, 320.29it/s]
+
+bleu-2:   0%|          | 0/1000 [00:00<?, ?it/s][A
+bleu-2:   1%|          | 7/1000 [00:00<00:14, 69.05it/s][A
+bleu-2:   3%|▎         | 27/1000 [00:00<00:07, 131.86it/s][A
+bleu-2:   5%|▌         | 54/1000 [00:00<00:05, 173.07it/s][A
+bleu-2:   9%|▉         | 92/1000 [00:00<00:04, 220.33it/s][A
+bleu-2:  14%|█▍        | 138/1000 [00:00<00:03, 265.10it/s][A
+bleu-2:  18%|█▊        | 184/1000 [00:00<00:02, 279.21it/s][A
+bleu-2:  23%|██▎       | 230/1000 [00:00<00:02, 297.45it/s][A
+bleu-2:  28%|██▊       | 276/1000 [00:00<00:02, 306.60it/s][A
+bleu-2:  32%|███▏      | 322/1000 [00:01<00:02, 321.38it/s][A
+bleu-2:  37%|███▋      | 368/1000 [00:01<00:01, 325.06it/s][A
+bleu-2:  41%|████▏     | 414/1000 [00:01<00:01, 335.51it/s][A
+bleu-2:  46%|████▌     | 460/1000 [00:01<00:01, 337.41it/s][A
+bleu-2:  51%|█████     | 506/1000 [00:01<00:01, 338.10it/s][A
+bleu-2:  55%|█████▌    | 552/1000 [00:01<00:01, 344.38it/s][A
+bleu-2:  60%|█████▉    | 598/1000 [00:01<00:01, 344.00it/s][A
+bleu-2:  64%|██████▍   | 644/1000 [00:01<00:01, 333.89it/s][A
+bleu-2:  69%|██████▉   | 690/1000 [00:02<00:00, 328.29it/s][A
+bleu-2:  74%|███████▎  | 736/1000 [00:02<00:00, 330.45it/s][A
+bleu-2:  78%|███████▊  | 782/1000 [00:02<00:00, 332.78it/s][A
+bleu-2:  83%|████████▎ | 828/1000 [00:02<00:00, 333.31it/s][A
+bleu-2:  87%|████████▋ | 874/1000 [00:02<00:00, 330.67it/s][A
+bleu-2:  92%|█████████▏| 920/1000 [00:02<00:00, 324.64it/s][A
+bleu-2:  97%|█████████▋| 966/1000 [00:02<00:00, 325.67it/s][Ableu-2: 100%|██████████| 1000/1000 [00:03<00:00, 324.37it/s]
+
+bleu-3:   0%|          | 0/1000 [00:00<?, ?it/s][A
+bleu-3:   1%|          | 7/1000 [00:00<00:14, 68.03it/s][A
+bleu-3:   3%|▎         | 33/1000 [00:00<00:05, 162.02it/s][A
+bleu-3:   7%|▋         | 72/1000 [00:00<00:03, 235.68it/s][A
+bleu-3:  11%|█         | 111/1000 [00:00<00:03, 256.25it/s][A
+bleu-3:  15%|█▌        | 150/1000 [00:00<00:03, 279.52it/s][A
+bleu-3:  19%|█▉        | 189/1000 [00:00<00:02, 270.70it/s][A
+bleu-3:  23%|██▎       | 228/1000 [00:00<00:02, 280.58it/s][A
+bleu-3:  27%|██▋       | 267/1000 [00:00<00:02, 283.15it/s][A
+bleu-3:  31%|███       | 306/1000 [00:01<00:02, 293.08it/s][A
+bleu-3:  34%|███▍      | 345/1000 [00:01<00:02, 293.33it/s][A
+bleu-3:  38%|███▊      | 384/1000 [00:01<00:02, 282.54it/s][A
+bleu-3:  42%|████▏     | 423/1000 [00:01<00:02, 271.54it/s][A
+bleu-3:  47%|████▋     | 466/1000 [00:01<00:01, 280.97it/s][A
+bleu-3:  51%|█████     | 509/1000 [00:01<00:01, 282.89it/s][A
+bleu-3:  55%|█████▌    | 552/1000 [00:01<00:01, 278.93it/s][A
+bleu-3:  60%|█████▉    | 595/1000 [00:02<00:01, 281.95it/s][A
+bleu-3:  64%|██████▍   | 638/1000 [00:02<00:01, 272.03it/s][A
+bleu-3:  68%|██████▊   | 681/1000 [00:02<00:01, 276.33it/s][A
+bleu-3:  72%|███████▏  | 724/1000 [00:02<00:00, 280.35it/s][A
+bleu-3:  77%|███████▋  | 767/1000 [00:02<00:00, 284.04it/s][A
+bleu-3:  81%|████████  | 810/1000 [00:02<00:00, 288.07it/s][A
+bleu-3:  85%|████████▌ | 853/1000 [00:02<00:00, 291.33it/s][A
+bleu-3:  90%|████████▉ | 896/1000 [00:03<00:00, 295.05it/s][A
+bleu-3:  94%|█████████▍| 939/1000 [00:03<00:00, 297.47it/s][A
+bleu-3:  98%|█████████▊| 982/1000 [00:03<00:00, 300.28it/s][Ableu-3: 100%|██████████| 1000/1000 [00:03<00:00, 293.23it/s]
+
+bleu-4:   0%|          | 0/1000 [00:00<?, ?it/s][A
+bleu-4:   1%|          | 11/1000 [00:00<00:09, 105.42it/s][A
+bleu-4:   4%|▍         | 43/1000 [00:00<00:04, 207.92it/s][A
+bleu-4:   8%|▊         | 75/1000 [00:00<00:03, 235.75it/s][A
+bleu-4:  11%|█▏        | 113/1000 [00:00<00:03, 270.30it/s][A
+bleu-4:  15%|█▌        | 151/1000 [00:00<00:03, 242.20it/s][A
+bleu-4:  19%|█▉        | 189/1000 [00:00<00:03, 250.87it/s][A
+bleu-4:  23%|██▎       | 229/1000 [00:00<00:02, 265.89it/s][A
+bleu-4:  27%|██▋       | 270/1000 [00:00<00:02, 280.61it/s][A
+bleu-4:  31%|███       | 311/1000 [00:01<00:02, 287.23it/s][A
+bleu-4:  35%|███▌      | 352/1000 [00:01<00:02, 292.15it/s][A
+bleu-4:  39%|███▉      | 393/1000 [00:01<00:02, 278.43it/s][A
+bleu-4:  43%|████▎     | 434/1000 [00:01<00:02, 280.29it/s][A
+bleu-4:  48%|████▊     | 475/1000 [00:01<00:01, 286.48it/s][A
+bleu-4:  52%|█████▏    | 516/1000 [00:01<00:01, 290.68it/s][A
+bleu-4:  56%|█████▌    | 557/1000 [00:01<00:01, 295.65it/s][A
+bleu-4:  60%|█████▉    | 598/1000 [00:02<00:01, 295.18it/s][A
+bleu-4:  64%|██████▍   | 639/1000 [00:02<00:01, 298.09it/s][A
+bleu-4:  68%|██████▊   | 680/1000 [00:02<00:01, 303.04it/s][A
+bleu-4:  72%|███████▏  | 721/1000 [00:02<00:00, 303.04it/s][A
+bleu-4:  76%|███████▌  | 762/1000 [00:02<00:00, 306.71it/s][A
+bleu-4:  80%|████████  | 805/1000 [00:02<00:00, 311.18it/s][A
+bleu-4:  85%|████████▍ | 848/1000 [00:02<00:00, 312.08it/s][A
+bleu-4:  89%|████████▉ | 891/1000 [00:02<00:00, 314.77it/s][A
+bleu-4:  93%|█████████▎| 934/1000 [00:02<00:00, 315.44it/s][A
+bleu-4:  98%|█████████▊| 977/1000 [00:03<00:00, 309.97it/s][Ableu-4: 100%|██████████| 1000/1000 [00:03<00:00, 305.35it/s]
+
+bleu-5:   0%|          | 0/1000 [00:00<?, ?it/s][A
+bleu-5:   1%|          | 7/1000 [00:00<00:14, 67.44it/s][A
+bleu-5:   4%|▎         | 35/1000 [00:00<00:05, 171.30it/s][A
+bleu-5:   7%|▋         | 72/1000 [00:00<00:03, 233.33it/s][A
+bleu-5:  11%|█         | 109/1000 [00:00<00:03, 255.64it/s][A
+bleu-5:  15%|█▍        | 146/1000 [00:00<00:03, 242.53it/s][A
+bleu-5:  18%|█▊        | 183/1000 [00:00<00:03, 236.08it/s][A
+bleu-5:  22%|██▏       | 220/1000 [00:00<00:03, 244.84it/s][A
+bleu-5:  26%|██▌       | 257/1000 [00:01<00:02, 254.21it/s][A
+bleu-5:  29%|██▉       | 294/1000 [00:01<00:02, 260.29it/s][A
+bleu-5:  33%|███▎      | 331/1000 [00:01<00:02, 265.06it/s][A
+bleu-5:  37%|███▋      | 368/1000 [00:01<00:02, 268.89it/s][A
+bleu-5:  41%|████      | 406/1000 [00:01<00:02, 276.40it/s][A
+bleu-5:  44%|████▍     | 444/1000 [00:01<00:01, 278.21it/s][A
+bleu-5:  48%|████▊     | 482/1000 [00:01<00:01, 280.39it/s][A
+bleu-5:  52%|█████▏    | 520/1000 [00:01<00:01, 284.64it/s][A
+bleu-5:  56%|█████▌    | 558/1000 [00:01<00:01, 285.23it/s][A
+bleu-5:  60%|█████▉    | 596/1000 [00:02<00:01, 287.93it/s][A
+bleu-5:  63%|██████▎   | 634/1000 [00:02<00:01, 286.28it/s][A
+bleu-5:  67%|██████▋   | 672/1000 [00:02<00:01, 282.10it/s][A
+bleu-5:  71%|███████   | 710/1000 [00:02<00:01, 274.49it/s][A
+bleu-5:  75%|███████▍  | 748/1000 [00:02<00:00, 274.57it/s][A
+bleu-5:  79%|███████▊  | 786/1000 [00:02<00:00, 276.94it/s][A
+bleu-5:  82%|████████▏ | 824/1000 [00:02<00:00, 277.38it/s][A
+bleu-5:  86%|████████▌ | 862/1000 [00:03<00:00, 275.98it/s][A
+bleu-5:  90%|█████████ | 900/1000 [00:03<00:00, 272.66it/s][A
+bleu-5:  94%|█████████▍| 938/1000 [00:03<00:00, 272.80it/s][A
+bleu-5:  98%|█████████▊| 976/1000 [00:03<00:00, 273.62it/s][Ableu-5: 100%|██████████| 1000/1000 [00:03<00:00, 272.57it/s]
+
+Featurizing p:   0%|          | 0/1091 [00:00<?, ?it/s][A
+Featurizing p:   0%|          | 5/1091 [00:00<00:25, 41.95it/s][A
+Featurizing p:   1%|          | 10/1091 [00:00<00:26, 41.20it/s][A
+Featurizing p:   1%|▏         | 15/1091 [00:00<00:25, 41.96it/s][A
+Featurizing p:   2%|▏         | 20/1091 [00:00<00:25, 41.77it/s][A
+Featurizing p:   2%|▏         | 25/1091 [00:00<00:25, 42.19it/s][A
+Featurizing p:   3%|▎         | 30/1091 [00:00<00:24, 42.47it/s][A
+Featurizing p:   3%|▎         | 35/1091 [00:00<00:26, 39.76it/s][A
+Featurizing p:   4%|▎         | 40/1091 [00:00<00:25, 40.70it/s][A
+Featurizing p:   4%|▍         | 45/1091 [00:01<00:25, 41.51it/s][A
+Featurizing p:   5%|▍         | 50/1091 [00:01<00:24, 42.00it/s][A
+Featurizing p:   5%|▌         | 55/1091 [00:01<00:25, 40.74it/s][A
+Featurizing p:   5%|▌         | 60/1091 [00:01<00:25, 40.38it/s][A
+Featurizing p:   6%|▌         | 65/1091 [00:01<00:24, 41.30it/s][A
+Featurizing p:   6%|▋         | 70/1091 [00:01<00:24, 41.86it/s][A
+Featurizing p:   7%|▋         | 75/1091 [00:01<00:23, 42.48it/s][A
+Featurizing p:   7%|▋         | 80/1091 [00:01<00:23, 42.89it/s][A
+Featurizing p:   8%|▊         | 85/1091 [00:02<00:23, 42.92it/s][A
+Featurizing p:   8%|▊         | 90/1091 [00:02<00:23, 43.22it/s][A
+Featurizing p:   9%|▊         | 95/1091 [00:02<00:23, 42.41it/s][A
+Featurizing p:   9%|▉         | 100/1091 [00:02<00:24, 40.63it/s][A
+Featurizing p:  10%|▉         | 105/1091 [00:02<00:24, 40.41it/s][A
+Featurizing p:  10%|█         | 110/1091 [00:02<00:23, 41.06it/s][A
+Featurizing p:  11%|█         | 115/1091 [00:02<00:24, 39.06it/s][A
+Featurizing p:  11%|█         | 120/1091 [00:02<00:24, 39.63it/s][A
+Featurizing p:  11%|█▏        | 125/1091 [00:03<00:24, 40.12it/s][A
+Featurizing p:  12%|█▏        | 130/1091 [00:03<00:23, 41.01it/s][A
+Featurizing p:  12%|█▏        | 135/1091 [00:03<00:22, 41.78it/s][A
+Featurizing p:  13%|█▎        | 140/1091 [00:03<00:22, 42.21it/s][A
+Featurizing p:  13%|█▎        | 145/1091 [00:03<00:22, 42.65it/s][A
+Featurizing p:  14%|█▎        | 150/1091 [00:03<00:22, 42.32it/s][A
+Featurizing p:  14%|█▍        | 155/1091 [00:03<00:22, 42.52it/s][A
+Featurizing p:  15%|█▍        | 160/1091 [00:03<00:21, 42.32it/s][A
+Featurizing p:  15%|█▌        | 165/1091 [00:03<00:21, 42.22it/s][A
+Featurizing p:  16%|█▌        | 170/1091 [00:04<00:21, 42.48it/s][A
+Featurizing p:  16%|█▌        | 175/1091 [00:04<00:21, 42.51it/s][A
+Featurizing p:  16%|█▋        | 180/1091 [00:04<00:21, 42.42it/s][A
+Featurizing p:  17%|█▋        | 185/1091 [00:04<00:21, 42.77it/s][A
+Featurizing p:  17%|█▋        | 190/1091 [00:04<00:21, 42.64it/s][A
+Featurizing p:  18%|█▊        | 195/1091 [00:04<00:21, 42.61it/s][A
+Featurizing p:  18%|█▊        | 200/1091 [00:04<00:20, 42.60it/s][A
+Featurizing p:  19%|█▉        | 205/1091 [00:04<00:20, 42.78it/s][A
+Featurizing p:  19%|█▉        | 210/1091 [00:05<00:21, 40.29it/s][A
+Featurizing p:  20%|█▉        | 215/1091 [00:05<00:21, 40.89it/s][A
+Featurizing p:  20%|██        | 220/1091 [00:05<00:21, 40.59it/s][A
+Featurizing p:  21%|██        | 225/1091 [00:05<00:22, 39.02it/s][A
+Featurizing p:  21%|██        | 229/1091 [00:05<00:22, 39.07it/s][A
+Featurizing p:  21%|██▏       | 234/1091 [00:05<00:21, 40.13it/s][A
+Featurizing p:  22%|██▏       | 239/1091 [00:05<00:20, 40.83it/s][A
+Featurizing p:  22%|██▏       | 244/1091 [00:05<00:20, 41.37it/s][A
+Featurizing p:  23%|██▎       | 249/1091 [00:05<00:20, 42.03it/s][A
+Featurizing p:  23%|██▎       | 254/1091 [00:06<00:19, 42.09it/s][A
+Featurizing p:  24%|██▎       | 259/1091 [00:06<00:19, 42.25it/s][A
+Featurizing p:  24%|██▍       | 264/1091 [00:06<00:19, 42.68it/s][A
+Featurizing p:  25%|██▍       | 269/1091 [00:06<00:19, 42.65it/s][A
+Featurizing p:  25%|██▌       | 274/1091 [00:06<00:19, 42.92it/s][A
+Featurizing p:  26%|██▌       | 279/1091 [00:06<00:18, 42.78it/s][A
+Featurizing p:  26%|██▌       | 284/1091 [00:06<00:18, 42.67it/s][A
+Featurizing p:  26%|██▋       | 289/1091 [00:06<00:18, 42.92it/s][A
+Featurizing p:  27%|██▋       | 294/1091 [00:07<00:18, 42.83it/s][A
+Featurizing p:  27%|██▋       | 299/1091 [00:07<00:18, 42.75it/s][A
+Featurizing p:  28%|██▊       | 304/1091 [00:07<00:18, 42.57it/s][A
+Featurizing p:  28%|██▊       | 309/1091 [00:07<00:18, 42.80it/s][A
+Featurizing p:  29%|██▉       | 314/1091 [00:07<00:19, 39.82it/s][A
+Featurizing p:  29%|██▉       | 319/1091 [00:07<00:19, 39.13it/s][A
+Featurizing p:  30%|██▉       | 324/1091 [00:07<00:19, 39.95it/s][A
+Featurizing p:  30%|███       | 329/1091 [00:07<00:19, 38.49it/s][A
+Featurizing p:  31%|███       | 334/1091 [00:08<00:19, 39.19it/s][A
+Featurizing p:  31%|███       | 339/1091 [00:08<00:18, 40.13it/s][A
+Featurizing p:  32%|███▏      | 344/1091 [00:08<00:18, 41.04it/s][A
+Featurizing p:  32%|███▏      | 349/1091 [00:08<00:17, 41.52it/s][A
+Featurizing p:  32%|███▏      | 354/1091 [00:08<00:17, 42.13it/s][A
+Featurizing p:  33%|███▎      | 359/1091 [00:08<00:17, 42.35it/s][A
+Featurizing p:  33%|███▎      | 364/1091 [00:08<00:17, 42.62it/s][A
+Featurizing p:  34%|███▍      | 369/1091 [00:08<00:16, 42.95it/s][A
+Featurizing p:  34%|███▍      | 374/1091 [00:08<00:16, 42.91it/s][A
+Featurizing p:  35%|███▍      | 379/1091 [00:09<00:16, 43.31it/s][A
+Featurizing p:  35%|███▌      | 384/1091 [00:09<00:16, 43.32it/s][A
+Featurizing p:  36%|███▌      | 389/1091 [00:09<00:16, 43.33it/s][A
+Featurizing p:  36%|███▌      | 394/1091 [00:09<00:15, 43.65it/s][A
+Featurizing p:  37%|███▋      | 399/1091 [00:09<00:15, 43.67it/s][A
+Featurizing p:  37%|███▋      | 404/1091 [00:09<00:15, 43.93it/s][A
+Featurizing p:  37%|███▋      | 409/1091 [00:09<00:15, 43.83it/s][A
+Featurizing p:  38%|███▊      | 414/1091 [00:09<00:15, 43.97it/s][A
+Featurizing p:  38%|███▊      | 419/1091 [00:10<00:15, 43.72it/s][A
+Featurizing p:  39%|███▉      | 424/1091 [00:10<00:15, 42.92it/s][A
+Featurizing p:  39%|███▉      | 429/1091 [00:10<00:15, 42.39it/s][A
+Featurizing p:  40%|███▉      | 434/1091 [00:10<00:16, 40.86it/s][A
+Featurizing p:  40%|████      | 439/1091 [00:10<00:16, 40.25it/s][A
+Featurizing p:  41%|████      | 444/1091 [00:10<00:15, 40.97it/s][A
+Featurizing p:  41%|████      | 449/1091 [00:10<00:15, 41.72it/s][A
+Featurizing p:  42%|████▏     | 454/1091 [00:10<00:15, 40.63it/s][A
+Featurizing p:  42%|████▏     | 459/1091 [00:10<00:15, 41.45it/s][A
+Featurizing p:  43%|████▎     | 464/1091 [00:11<00:14, 42.09it/s][A
+Featurizing p:  43%|████▎     | 469/1091 [00:11<00:14, 42.50it/s][A
+Featurizing p:  43%|████▎     | 474/1091 [00:11<00:14, 42.85it/s][A
+Featurizing p:  44%|████▍     | 479/1091 [00:11<00:14, 43.02it/s][A
+Featurizing p:  44%|████▍     | 484/1091 [00:11<00:14, 41.88it/s][A
+Featurizing p:  45%|████▍     | 489/1091 [00:11<00:14, 42.40it/s][A
+Featurizing p:  45%|████▌     | 494/1091 [00:11<00:13, 42.79it/s][A
+Featurizing p:  46%|████▌     | 499/1091 [00:11<00:13, 43.04it/s][A
+Featurizing p:  46%|████▌     | 504/1091 [00:12<00:14, 41.78it/s][A
+Featurizing p:  47%|████▋     | 509/1091 [00:12<00:13, 42.35it/s][A
+Featurizing p:  47%|████▋     | 514/1091 [00:12<00:13, 42.65it/s][A
+Featurizing p:  48%|████▊     | 519/1091 [00:12<00:13, 42.86it/s][A
+Featurizing p:  48%|████▊     | 524/1091 [00:12<00:13, 42.24it/s][A
+Featurizing p:  48%|████▊     | 529/1091 [00:12<00:13, 42.59it/s][A
+Featurizing p:  49%|████▉     | 534/1091 [00:12<00:13, 41.12it/s][A
+Featurizing p:  49%|████▉     | 539/1091 [00:12<00:13, 40.48it/s][A
+Featurizing p:  50%|████▉     | 544/1091 [00:13<00:13, 41.29it/s][A
+Featurizing p:  50%|█████     | 549/1091 [00:13<00:13, 41.63it/s][A
+Featurizing p:  51%|█████     | 554/1091 [00:13<00:12, 42.18it/s][A
+Featurizing p:  51%|█████     | 559/1091 [00:13<00:12, 42.61it/s][A
+Featurizing p:  52%|█████▏    | 564/1091 [00:13<00:12, 42.33it/s][A
+Featurizing p:  52%|█████▏    | 569/1091 [00:13<00:12, 42.70it/s][A
+Featurizing p:  53%|█████▎    | 574/1091 [00:13<00:12, 43.00it/s][A
+Featurizing p:  53%|█████▎    | 579/1091 [00:13<00:11, 42.96it/s][A
+Featurizing p:  54%|█████▎    | 584/1091 [00:13<00:11, 43.23it/s][A
+Featurizing p:  54%|█████▍    | 589/1091 [00:14<00:11, 43.17it/s][A
+Featurizing p:  54%|█████▍    | 594/1091 [00:14<00:11, 43.40it/s][A
+Featurizing p:  55%|█████▍    | 599/1091 [00:14<00:11, 43.55it/s][A
+Featurizing p:  55%|█████▌    | 604/1091 [00:14<00:11, 43.39it/s][A
+Featurizing p:  56%|█████▌    | 609/1091 [00:14<00:11, 43.52it/s][A
+Featurizing p:  56%|█████▋    | 614/1091 [00:14<00:10, 43.42it/s][A
+Featurizing p:  57%|█████▋    | 619/1091 [00:14<00:10, 43.68it/s][A
+Featurizing p:  57%|█████▋    | 624/1091 [00:14<00:10, 43.38it/s][A
+Featurizing p:  58%|█████▊    | 629/1091 [00:14<00:10, 43.54it/s][A
+Featurizing p:  58%|█████▊    | 634/1091 [00:15<00:10, 43.49it/s][A
+Featurizing p:  59%|█████▊    | 639/1091 [00:15<00:10, 41.28it/s][A
+Featurizing p:  59%|█████▉    | 644/1091 [00:15<00:10, 40.88it/s][A
+Featurizing p:  59%|█████▉    | 649/1091 [00:15<00:10, 40.65it/s][A
+Featurizing p:  60%|█████▉    | 654/1091 [00:15<00:10, 40.19it/s][A
+Featurizing p:  60%|██████    | 659/1091 [00:15<00:10, 40.97it/s][A
+Featurizing p:  61%|██████    | 664/1091 [00:15<00:10, 41.62it/s][A
+Featurizing p:  61%|██████▏   | 669/1091 [00:15<00:09, 42.23it/s][A
+Featurizing p:  62%|██████▏   | 674/1091 [00:16<00:09, 42.19it/s][A
+Featurizing p:  62%|██████▏   | 679/1091 [00:16<00:09, 42.57it/s][A
+Featurizing p:  63%|██████▎   | 684/1091 [00:16<00:09, 42.45it/s][A
+Featurizing p:  63%|██████▎   | 689/1091 [00:16<00:09, 42.77it/s][A
+Featurizing p:  64%|██████▎   | 694/1091 [00:16<00:09, 42.67it/s][A
+Featurizing p:  64%|██████▍   | 699/1091 [00:16<00:09, 42.91it/s][A
+Featurizing p:  65%|██████▍   | 704/1091 [00:16<00:08, 43.10it/s][A
+Featurizing p:  65%|██████▍   | 709/1091 [00:16<00:08, 43.03it/s][A
+Featurizing p:  65%|██████▌   | 714/1091 [00:16<00:08, 43.20it/s][A
+Featurizing p:  66%|██████▌   | 719/1091 [00:17<00:08, 41.41it/s][A
+Featurizing p:  66%|██████▋   | 724/1091 [00:17<00:08, 42.01it/s][A
+Featurizing p:  67%|██████▋   | 729/1091 [00:17<00:08, 42.49it/s][A
+Featurizing p:  67%|██████▋   | 734/1091 [00:17<00:08, 42.85it/s][A
+Featurizing p:  68%|██████▊   | 739/1091 [00:17<00:08, 43.08it/s][A
+Featurizing p:  68%|██████▊   | 744/1091 [00:17<00:08, 41.53it/s][A
+Featurizing p:  69%|██████▊   | 749/1091 [00:17<00:08, 40.12it/s][A
+Featurizing p:  69%|██████▉   | 754/1091 [00:17<00:08, 41.03it/s][A
+Featurizing p:  70%|██████▉   | 759/1091 [00:18<00:08, 40.38it/s][A
+Featurizing p:  70%|███████   | 764/1091 [00:18<00:08, 40.51it/s][A
+Featurizing p:  70%|███████   | 769/1091 [00:18<00:07, 41.41it/s][A
+Featurizing p:  71%|███████   | 774/1091 [00:18<00:07, 40.79it/s][A
+Featurizing p:  71%|███████▏  | 779/1091 [00:18<00:07, 41.58it/s][A
+Featurizing p:  72%|███████▏  | 784/1091 [00:18<00:07, 42.14it/s][A
+Featurizing p:  72%|███████▏  | 789/1091 [00:18<00:07, 42.64it/s][A
+Featurizing p:  73%|███████▎  | 794/1091 [00:18<00:06, 42.96it/s][A
+Featurizing p:  73%|███████▎  | 799/1091 [00:19<00:06, 42.38it/s][A
+Featurizing p:  74%|███████▎  | 804/1091 [00:19<00:06, 42.82it/s][A
+Featurizing p:  74%|███████▍  | 809/1091 [00:19<00:06, 43.11it/s][A
+Featurizing p:  75%|███████▍  | 814/1091 [00:19<00:06, 43.35it/s][A
+Featurizing p:  75%|███████▌  | 819/1091 [00:19<00:06, 43.22it/s][A
+Featurizing p:  76%|███████▌  | 824/1091 [00:19<00:06, 43.44it/s][A
+Featurizing p:  76%|███████▌  | 829/1091 [00:19<00:06, 43.64it/s][A
+Featurizing p:  76%|███████▋  | 834/1091 [00:19<00:05, 43.66it/s][A
+Featurizing p:  77%|███████▋  | 839/1091 [00:19<00:05, 43.37it/s][A
+Featurizing p:  77%|███████▋  | 844/1091 [00:20<00:05, 43.50it/s][A
+Featurizing p:  78%|███████▊  | 849/1091 [00:20<00:05, 43.66it/s][A
+Featurizing p:  78%|███████▊  | 854/1091 [00:20<00:05, 42.97it/s][A
+Featurizing p:  79%|███████▊  | 859/1091 [00:20<00:05, 41.41it/s][A
+Featurizing p:  79%|███████▉  | 864/1091 [00:20<00:05, 39.89it/s][A
+Featurizing p:  80%|███████▉  | 869/1091 [00:20<00:05, 39.47it/s][A
+Featurizing p:  80%|████████  | 874/1091 [00:20<00:05, 40.40it/s][A
+Featurizing p:  81%|████████  | 879/1091 [00:20<00:05, 41.33it/s][A
+Featurizing p:  81%|████████  | 884/1091 [00:21<00:04, 42.02it/s][A
+Featurizing p:  81%|████████▏ | 889/1091 [00:21<00:04, 42.27it/s][A
+Featurizing p:  82%|████████▏ | 894/1091 [00:21<00:04, 42.75it/s][A
+Featurizing p:  82%|████████▏ | 899/1091 [00:21<00:04, 43.19it/s][A
+Featurizing p:  83%|████████▎ | 904/1091 [00:21<00:04, 43.39it/s][A
+Featurizing p:  83%|████████▎ | 909/1091 [00:21<00:04, 43.03it/s][A
+Featurizing p:  84%|████████▍ | 914/1091 [00:21<00:04, 43.22it/s][A
+Featurizing p:  84%|████████▍ | 919/1091 [00:21<00:03, 43.38it/s][A
+Featurizing p:  85%|████████▍ | 924/1091 [00:21<00:03, 43.28it/s][A
+Featurizing p:  85%|████████▌ | 929/1091 [00:22<00:03, 43.39it/s][A
+Featurizing p:  86%|████████▌ | 934/1091 [00:22<00:03, 43.55it/s][A
+Featurizing p:  86%|████████▌ | 939/1091 [00:22<00:03, 43.62it/s][A
+Featurizing p:  87%|████████▋ | 944/1091 [00:22<00:03, 43.45it/s][A
+Featurizing p:  87%|████████▋ | 949/1091 [00:22<00:03, 43.59it/s][A
+Featurizing p:  87%|████████▋ | 954/1091 [00:22<00:03, 43.73it/s][A
+Featurizing p:  88%|████████▊ | 959/1091 [00:22<00:03, 43.43it/s][A
+Featurizing p:  88%|████████▊ | 964/1091 [00:22<00:02, 42.90it/s][A
+Featurizing p:  89%|████████▉ | 969/1091 [00:23<00:02, 41.05it/s][A
+Featurizing p:  89%|████████▉ | 974/1091 [00:23<00:02, 39.43it/s][A
+Featurizing p:  90%|████████▉ | 979/1091 [00:23<00:02, 40.23it/s][A
+Featurizing p:  90%|█████████ | 984/1091 [00:23<00:02, 41.28it/s][A
+Featurizing p:  91%|█████████ | 989/1091 [00:23<00:02, 42.01it/s][A
+Featurizing p:  91%|█████████ | 994/1091 [00:23<00:02, 42.25it/s][A
+Featurizing p:  92%|█████████▏| 999/1091 [00:23<00:02, 42.69it/s][A
+Featurizing p:  92%|█████████▏| 1004/1091 [00:23<00:02, 42.99it/s][A
+Featurizing p:  92%|█████████▏| 1009/1091 [00:23<00:01, 42.89it/s][A
+Featurizing p:  93%|█████████▎| 1014/1091 [00:24<00:01, 43.16it/s][A
+Featurizing p:  93%|█████████▎| 1019/1091 [00:24<00:01, 43.46it/s][A
+Featurizing p:  94%|█████████▍| 1024/1091 [00:24<00:01, 43.66it/s][A
+Featurizing p:  94%|█████████▍| 1029/1091 [00:24<00:01, 43.35it/s][A
+Featurizing p:  95%|█████████▍| 1034/1091 [00:24<00:01, 43.54it/s][A
+Featurizing p:  95%|█████████▌| 1039/1091 [00:24<00:01, 43.61it/s][A
+Featurizing p:  96%|█████████▌| 1044/1091 [00:24<00:01, 43.32it/s][A
+Featurizing p:  96%|█████████▌| 1049/1091 [00:24<00:00, 43.34it/s][A
+Featurizing p:  97%|█████████▋| 1054/1091 [00:25<00:00, 43.44it/s][A
+Featurizing p:  97%|█████████▋| 1059/1091 [00:25<00:00, 43.54it/s][A
+Featurizing p:  98%|█████████▊| 1064/1091 [00:25<00:00, 43.44it/s][A
+Featurizing p:  98%|█████████▊| 1069/1091 [00:25<00:00, 43.63it/s][A
+Featurizing p:  98%|█████████▊| 1074/1091 [00:25<00:00, 43.62it/s][A
+Featurizing p:  99%|█████████▉| 1079/1091 [00:25<00:00, 38.98it/s][A
+Featurizing p:  99%|█████████▉| 1083/1091 [00:25<00:00, 38.55it/s][A
+Featurizing p: 100%|█████████▉| 1088/1091 [00:25<00:00, 39.96it/s][AFeaturizing p: 100%|██████████| 1091/1091 [00:25<00:00, 42.11it/s]
+
+Featurizing q:   0%|          | 0/1091 [00:00<?, ?it/s][A
+Featurizing q:   0%|          | 5/1091 [00:00<00:25, 43.34it/s][A
+Featurizing q:   1%|          | 10/1091 [00:00<00:24, 43.62it/s][A
+Featurizing q:   1%|▏         | 15/1091 [00:00<00:24, 43.74it/s][A
+Featurizing q:   2%|▏         | 20/1091 [00:00<00:24, 43.89it/s][A
+Featurizing q:   2%|▏         | 25/1091 [00:00<00:24, 43.94it/s][A
+Featurizing q:   3%|▎         | 30/1091 [00:00<00:24, 43.81it/s][A
+Featurizing q:   3%|▎         | 35/1091 [00:00<00:24, 43.92it/s][A
+Featurizing q:   4%|▎         | 40/1091 [00:00<00:23, 43.93it/s][A
+Featurizing q:   4%|▍         | 45/1091 [00:01<00:23, 43.74it/s][A
+Featurizing q:   5%|▍         | 50/1091 [00:01<00:23, 43.68it/s][A
+Featurizing q:   5%|▌         | 55/1091 [00:01<00:23, 43.85it/s][A
+Featurizing q:   5%|▌         | 60/1091 [00:01<00:23, 43.83it/s][A
+Featurizing q:   6%|▌         | 65/1091 [00:01<00:23, 43.96it/s][A
+Featurizing q:   6%|▋         | 70/1091 [00:01<00:23, 44.11it/s][A
+Featurizing q:   7%|▋         | 75/1091 [00:01<00:23, 44.11it/s][A
+Featurizing q:   7%|▋         | 80/1091 [00:01<00:23, 43.81it/s][A
+Featurizing q:   8%|▊         | 85/1091 [00:01<00:22, 43.95it/s][A
+Featurizing q:   8%|▊         | 90/1091 [00:02<00:23, 41.90it/s][A
+Featurizing q:   9%|▊         | 95/1091 [00:02<00:24, 39.88it/s][A
+Featurizing q:   9%|▉         | 100/1091 [00:02<00:24, 41.05it/s][A
+Featurizing q:  10%|▉         | 105/1091 [00:02<00:23, 41.91it/s][A
+Featurizing q:  10%|█         | 110/1091 [00:02<00:23, 42.56it/s][A
+Featurizing q:  11%|█         | 115/1091 [00:02<00:22, 42.78it/s][A
+Featurizing q:  11%|█         | 120/1091 [00:02<00:22, 43.16it/s][A
+Featurizing q:  11%|█▏        | 125/1091 [00:02<00:22, 43.42it/s][A
+Featurizing q:  12%|█▏        | 130/1091 [00:03<00:22, 43.57it/s][A
+Featurizing q:  12%|█▏        | 135/1091 [00:03<00:22, 43.38it/s][A
+Featurizing q:  13%|█▎        | 140/1091 [00:03<00:21, 43.56it/s][A
+Featurizing q:  13%|█▎        | 145/1091 [00:03<00:21, 43.67it/s][A
+Featurizing q:  14%|█▎        | 150/1091 [00:03<00:21, 43.32it/s][A
+Featurizing q:  14%|█▍        | 155/1091 [00:03<00:21, 43.57it/s][A
+Featurizing q:  15%|█▍        | 160/1091 [00:03<00:21, 43.81it/s][A
+Featurizing q:  15%|█▌        | 165/1091 [00:03<00:21, 43.88it/s][A
+Featurizing q:  16%|█▌        | 170/1091 [00:03<00:21, 43.71it/s][A
+Featurizing q:  16%|█▌        | 175/1091 [00:04<00:20, 43.83it/s][A
+Featurizing q:  16%|█▋        | 180/1091 [00:04<00:20, 43.99it/s][A
+Featurizing q:  17%|█▋        | 185/1091 [00:04<00:20, 43.53it/s][A
+Featurizing q:  17%|█▋        | 190/1091 [00:04<00:20, 43.76it/s][A
+Featurizing q:  18%|█▊        | 195/1091 [00:04<00:20, 43.46it/s][A
+Featurizing q:  18%|█▊        | 200/1091 [00:04<00:21, 40.73it/s][A
+Featurizing q:  19%|█▉        | 205/1091 [00:04<00:22, 39.98it/s][A
+Featurizing q:  19%|█▉        | 210/1091 [00:04<00:21, 41.13it/s][A
+Featurizing q:  20%|█▉        | 215/1091 [00:04<00:20, 41.97it/s][A
+Featurizing q:  20%|██        | 220/1091 [00:05<00:20, 42.58it/s][A
+Featurizing q:  21%|██        | 225/1091 [00:05<00:20, 43.05it/s][A
+Featurizing q:  21%|██        | 230/1091 [00:05<00:20, 43.02it/s][A
+Featurizing q:  22%|██▏       | 235/1091 [00:05<00:19, 43.37it/s][A
+Featurizing q:  22%|██▏       | 240/1091 [00:05<00:19, 43.52it/s][A
+Featurizing q:  22%|██▏       | 245/1091 [00:05<00:19, 43.72it/s][A
+Featurizing q:  23%|██▎       | 250/1091 [00:05<00:19, 43.82it/s][A
+Featurizing q:  23%|██▎       | 255/1091 [00:05<00:19, 43.68it/s][A
+Featurizing q:  24%|██▍       | 260/1091 [00:06<00:18, 43.79it/s][A
+Featurizing q:  24%|██▍       | 265/1091 [00:06<00:18, 43.93it/s][A
+Featurizing q:  25%|██▍       | 270/1091 [00:06<00:18, 44.11it/s][A
+Featurizing q:  25%|██▌       | 275/1091 [00:06<00:18, 44.17it/s][A
+Featurizing q:  26%|██▌       | 280/1091 [00:06<00:18, 44.22it/s][A
+Featurizing q:  26%|██▌       | 285/1091 [00:06<00:18, 43.96it/s][A
+Featurizing q:  27%|██▋       | 290/1091 [00:06<00:18, 44.05it/s][A
+Featurizing q:  27%|██▋       | 295/1091 [00:06<00:18, 44.14it/s][A
+Featurizing q:  27%|██▋       | 300/1091 [00:06<00:17, 44.09it/s][A
+Featurizing q:  28%|██▊       | 305/1091 [00:07<00:17, 43.98it/s][A
+Featurizing q:  28%|██▊       | 310/1091 [00:07<00:18, 41.25it/s][A
+Featurizing q:  29%|██▉       | 315/1091 [00:07<00:19, 39.98it/s][A
+Featurizing q:  29%|██▉       | 320/1091 [00:07<00:18, 41.13it/s][A
+Featurizing q:  30%|██▉       | 325/1091 [00:07<00:18, 41.94it/s][A
+Featurizing q:  30%|███       | 330/1091 [00:07<00:17, 42.59it/s][A
+Featurizing q:  31%|███       | 335/1091 [00:07<00:17, 43.06it/s][A
+Featurizing q:  31%|███       | 340/1091 [00:07<00:17, 43.10it/s][A
+Featurizing q:  32%|███▏      | 345/1091 [00:08<00:18, 40.19it/s][A
+Featurizing q:  32%|███▏      | 350/1091 [00:08<00:18, 40.93it/s][A
+Featurizing q:  33%|███▎      | 355/1091 [00:08<00:17, 41.47it/s][A
+Featurizing q:  33%|███▎      | 360/1091 [00:08<00:17, 41.99it/s][A
+Featurizing q:  33%|███▎      | 365/1091 [00:08<00:17, 42.25it/s][A
+Featurizing q:  34%|███▍      | 370/1091 [00:08<00:16, 42.68it/s][A
+Featurizing q:  34%|███▍      | 375/1091 [00:08<00:16, 42.95it/s][A
+Featurizing q:  35%|███▍      | 380/1091 [00:08<00:16, 43.22it/s][A
+Featurizing q:  35%|███▌      | 385/1091 [00:08<00:16, 43.37it/s][A
+Featurizing q:  36%|███▌      | 390/1091 [00:09<00:16, 43.13it/s][A
+Featurizing q:  36%|███▌      | 395/1091 [00:09<00:16, 43.43it/s][A
+Featurizing q:  37%|███▋      | 400/1091 [00:09<00:15, 43.64it/s][A
+Featurizing q:  37%|███▋      | 405/1091 [00:09<00:15, 43.74it/s][A
+Featurizing q:  38%|███▊      | 410/1091 [00:09<00:15, 43.68it/s][A
+Featurizing q:  38%|███▊      | 415/1091 [00:09<00:15, 42.77it/s][A
+Featurizing q:  38%|███▊      | 420/1091 [00:09<00:16, 40.92it/s][A
+Featurizing q:  39%|███▉      | 425/1091 [00:09<00:16, 40.74it/s][A
+Featurizing q:  39%|███▉      | 430/1091 [00:10<00:15, 41.64it/s][A
+Featurizing q:  40%|███▉      | 435/1091 [00:10<00:15, 42.42it/s][A
+Featurizing q:  40%|████      | 440/1091 [00:10<00:15, 42.65it/s][A
+Featurizing q:  41%|████      | 445/1091 [00:10<00:14, 43.11it/s][A
+Featurizing q:  41%|████      | 450/1091 [00:10<00:14, 43.18it/s][A
+Featurizing q:  42%|████▏     | 455/1091 [00:10<00:14, 43.40it/s][A
+Featurizing q:  42%|████▏     | 460/1091 [00:10<00:14, 43.58it/s][A
+Featurizing q:  43%|████▎     | 465/1091 [00:10<00:14, 43.51it/s][A
+Featurizing q:  43%|████▎     | 470/1091 [00:10<00:14, 43.64it/s][A
+Featurizing q:  44%|████▎     | 475/1091 [00:11<00:14, 43.79it/s][A
+Featurizing q:  44%|████▍     | 480/1091 [00:11<00:13, 43.85it/s][A
+Featurizing q:  44%|████▍     | 485/1091 [00:11<00:13, 43.92it/s][A
+Featurizing q:  45%|████▍     | 490/1091 [00:11<00:13, 43.98it/s][A
+Featurizing q:  45%|████▌     | 495/1091 [00:11<00:13, 43.77it/s][A
+Featurizing q:  46%|████▌     | 500/1091 [00:11<00:13, 43.90it/s][A
+Featurizing q:  46%|████▋     | 505/1091 [00:11<00:13, 44.09it/s][A
+Featurizing q:  47%|████▋     | 510/1091 [00:11<00:13, 44.21it/s][A
+Featurizing q:  47%|████▋     | 515/1091 [00:11<00:13, 44.25it/s][A
+Featurizing q:  48%|████▊     | 520/1091 [00:12<00:13, 43.86it/s][A
+Featurizing q:  48%|████▊     | 525/1091 [00:12<00:13, 42.34it/s][A
+Featurizing q:  49%|████▊     | 530/1091 [00:12<00:13, 42.03it/s][A
+Featurizing q:  49%|████▉     | 535/1091 [00:12<00:13, 40.46it/s][A
+Featurizing q:  49%|████▉     | 540/1091 [00:12<00:13, 40.16it/s][A
+Featurizing q:  50%|████▉     | 545/1091 [00:12<00:13, 41.21it/s][A
+Featurizing q:  50%|█████     | 550/1091 [00:12<00:12, 42.03it/s][A
+Featurizing q:  51%|█████     | 555/1091 [00:12<00:12, 42.61it/s][A
+Featurizing q:  51%|█████▏    | 560/1091 [00:13<00:12, 43.01it/s][A
+Featurizing q:  52%|█████▏    | 565/1091 [00:13<00:12, 43.38it/s][A
+Featurizing q:  52%|█████▏    | 570/1091 [00:13<00:12, 43.09it/s][A
+Featurizing q:  53%|█████▎    | 575/1091 [00:13<00:11, 43.30it/s][A
+Featurizing q:  53%|█████▎    | 580/1091 [00:13<00:11, 43.50it/s][A
+Featurizing q:  54%|█████▎    | 585/1091 [00:13<00:11, 43.68it/s][A
+Featurizing q:  54%|█████▍    | 590/1091 [00:13<00:11, 43.88it/s][A
+Featurizing q:  55%|█████▍    | 595/1091 [00:13<00:11, 43.64it/s][A
+Featurizing q:  55%|█████▍    | 600/1091 [00:13<00:11, 43.65it/s][A
+Featurizing q:  55%|█████▌    | 605/1091 [00:14<00:11, 43.76it/s][A
+Featurizing q:  56%|█████▌    | 610/1091 [00:14<00:10, 43.87it/s][A
+Featurizing q:  56%|█████▋    | 615/1091 [00:14<00:10, 43.93it/s][A
+Featurizing q:  57%|█████▋    | 620/1091 [00:14<00:10, 43.84it/s][A
+Featurizing q:  57%|█████▋    | 625/1091 [00:14<00:10, 43.89it/s][A
+Featurizing q:  58%|█████▊    | 630/1091 [00:14<00:10, 44.01it/s][A
+Featurizing q:  58%|█████▊    | 635/1091 [00:14<00:10, 43.26it/s][A
+Featurizing q:  59%|█████▊    | 640/1091 [00:14<00:10, 43.41it/s][A
+Featurizing q:  59%|█████▉    | 645/1091 [00:15<00:11, 39.58it/s][A
+Featurizing q:  60%|█████▉    | 650/1091 [00:15<00:11, 39.69it/s][A
+Featurizing q:  60%|██████    | 655/1091 [00:15<00:10, 40.14it/s][A
+Featurizing q:  60%|██████    | 660/1091 [00:15<00:10, 41.29it/s][A
+Featurizing q:  61%|██████    | 665/1091 [00:15<00:10, 42.09it/s][A
+Featurizing q:  61%|██████▏   | 670/1091 [00:15<00:09, 42.65it/s][A
+Featurizing q:  62%|██████▏   | 675/1091 [00:15<00:09, 43.10it/s][A
+Featurizing q:  62%|██████▏   | 680/1091 [00:15<00:09, 43.38it/s][A
+Featurizing q:  63%|██████▎   | 685/1091 [00:15<00:09, 43.62it/s][A
+Featurizing q:  63%|██████▎   | 690/1091 [00:16<00:09, 43.50it/s][A
+Featurizing q:  64%|██████▎   | 695/1091 [00:16<00:09, 43.71it/s][A
+Featurizing q:  64%|██████▍   | 700/1091 [00:16<00:09, 42.69it/s][A
+Featurizing q:  65%|██████▍   | 705/1091 [00:16<00:08, 43.17it/s][A
+Featurizing q:  65%|██████▌   | 710/1091 [00:16<00:08, 43.53it/s][A
+Featurizing q:  66%|██████▌   | 715/1091 [00:16<00:08, 43.72it/s][A
+Featurizing q:  66%|██████▌   | 720/1091 [00:16<00:08, 43.87it/s][A
+Featurizing q:  66%|██████▋   | 725/1091 [00:16<00:08, 44.03it/s][A
+Featurizing q:  67%|██████▋   | 730/1091 [00:16<00:08, 44.11it/s][A
+Featurizing q:  67%|██████▋   | 735/1091 [00:17<00:08, 44.09it/s][A
+Featurizing q:  68%|██████▊   | 740/1091 [00:17<00:08, 42.75it/s][A
+Featurizing q:  68%|██████▊   | 745/1091 [00:17<00:08, 42.53it/s][A
+Featurizing q:  69%|██████▊   | 750/1091 [00:17<00:08, 40.84it/s][A
+Featurizing q:  69%|██████▉   | 755/1091 [00:17<00:08, 39.77it/s][A
+Featurizing q:  70%|██████▉   | 759/1091 [00:17<00:08, 39.72it/s][A
+Featurizing q:  70%|███████   | 764/1091 [00:17<00:07, 40.95it/s][A
+Featurizing q:  70%|███████   | 769/1091 [00:17<00:07, 41.87it/s][A
+Featurizing q:  71%|███████   | 774/1091 [00:18<00:07, 42.54it/s][A
+Featurizing q:  71%|███████▏  | 779/1091 [00:18<00:07, 42.25it/s][A
+Featurizing q:  72%|███████▏  | 784/1091 [00:18<00:07, 42.80it/s][A
+Featurizing q:  72%|███████▏  | 789/1091 [00:18<00:06, 43.24it/s][A
+Featurizing q:  73%|███████▎  | 794/1091 [00:18<00:06, 43.52it/s][A
+Featurizing q:  73%|███████▎  | 799/1091 [00:18<00:06, 43.73it/s][A
+Featurizing q:  74%|███████▎  | 804/1091 [00:18<00:06, 43.90it/s][A
+Featurizing q:  74%|███████▍  | 809/1091 [00:18<00:06, 43.97it/s][A
+Featurizing q:  75%|███████▍  | 814/1091 [00:18<00:06, 43.98it/s][A
+Featurizing q:  75%|███████▌  | 819/1091 [00:19<00:06, 43.63it/s][A
+Featurizing q:  76%|███████▌  | 824/1091 [00:19<00:06, 43.86it/s][A
+Featurizing q:  76%|███████▌  | 829/1091 [00:19<00:05, 44.16it/s][A
+Featurizing q:  76%|███████▋  | 834/1091 [00:19<00:05, 43.96it/s][A
+Featurizing q:  77%|███████▋  | 839/1091 [00:19<00:05, 43.78it/s][A
+Featurizing q:  77%|███████▋  | 844/1091 [00:19<00:05, 43.95it/s][A
+Featurizing q:  78%|███████▊  | 849/1091 [00:19<00:05, 44.07it/s][A
+Featurizing q:  78%|███████▊  | 854/1091 [00:19<00:05, 43.96it/s][A
+Featurizing q:  79%|███████▊  | 859/1091 [00:19<00:05, 42.92it/s][A
+Featurizing q:  79%|███████▉  | 864/1091 [00:20<00:05, 42.74it/s][A
+Featurizing q:  80%|███████▉  | 869/1091 [00:20<00:05, 38.79it/s][A
+Featurizing q:  80%|████████  | 873/1091 [00:20<00:05, 38.71it/s][A
+Featurizing q:  80%|████████  | 877/1091 [00:20<00:05, 38.68it/s][A
+Featurizing q:  81%|████████  | 881/1091 [00:20<00:05, 38.46it/s][A
+Featurizing q:  81%|████████  | 885/1091 [00:20<00:05, 38.44it/s][A
+Featurizing q:  81%|████████▏ | 889/1091 [00:20<00:05, 38.37it/s][A
+Featurizing q:  82%|████████▏ | 893/1091 [00:20<00:05, 38.30it/s][A
+Featurizing q:  82%|████████▏ | 897/1091 [00:20<00:05, 38.46it/s][A
+Featurizing q:  83%|████████▎ | 902/1091 [00:21<00:04, 40.28it/s][A
+Featurizing q:  83%|████████▎ | 907/1091 [00:21<00:04, 41.47it/s][A
+Featurizing q:  84%|████████▎ | 912/1091 [00:21<00:04, 42.27it/s][A
+Featurizing q:  84%|████████▍ | 917/1091 [00:21<00:04, 42.89it/s][A
+Featurizing q:  85%|████████▍ | 922/1091 [00:21<00:03, 43.32it/s][A
+Featurizing q:  85%|████████▍ | 927/1091 [00:21<00:03, 43.58it/s][A
+Featurizing q:  85%|████████▌ | 932/1091 [00:21<00:03, 43.80it/s][A
+Featurizing q:  86%|████████▌ | 937/1091 [00:21<00:03, 43.60it/s][A
+Featurizing q:  86%|████████▋ | 942/1091 [00:22<00:03, 43.73it/s][A
+Featurizing q:  87%|████████▋ | 947/1091 [00:22<00:03, 43.91it/s][A
+Featurizing q:  87%|████████▋ | 952/1091 [00:22<00:03, 44.06it/s][A
+Featurizing q:  88%|████████▊ | 957/1091 [00:22<00:03, 44.12it/s][A
+Featurizing q:  88%|████████▊ | 962/1091 [00:22<00:03, 42.47it/s][A
+Featurizing q:  89%|████████▊ | 967/1091 [00:22<00:03, 38.66it/s][A
+Featurizing q:  89%|████████▉ | 971/1091 [00:22<00:03, 38.15it/s][A
+Featurizing q:  89%|████████▉ | 975/1091 [00:22<00:03, 38.25it/s][A
+Featurizing q:  90%|████████▉ | 980/1091 [00:22<00:02, 39.97it/s][A
+Featurizing q:  90%|█████████ | 985/1091 [00:23<00:02, 41.21it/s][A
+Featurizing q:  91%|█████████ | 990/1091 [00:23<00:02, 42.04it/s][A
+Featurizing q:  91%|█████████ | 995/1091 [00:23<00:02, 42.77it/s][A
+Featurizing q:  92%|█████████▏| 1000/1091 [00:23<00:02, 43.24it/s][A
+Featurizing q:  92%|█████████▏| 1005/1091 [00:23<00:01, 43.57it/s][A
+Featurizing q:  93%|█████████▎| 1010/1091 [00:23<00:01, 43.70it/s][A
+Featurizing q:  93%|█████████▎| 1015/1091 [00:23<00:01, 43.62it/s][A
+Featurizing q:  93%|█████████▎| 1020/1091 [00:23<00:01, 43.63it/s][A
+Featurizing q:  94%|█████████▍| 1025/1091 [00:23<00:01, 43.82it/s][A
+Featurizing q:  94%|█████████▍| 1030/1091 [00:24<00:01, 43.90it/s][A
+Featurizing q:  95%|█████████▍| 1035/1091 [00:24<00:01, 44.05it/s][A
+Featurizing q:  95%|█████████▌| 1040/1091 [00:24<00:01, 44.10it/s][A
+Featurizing q:  96%|█████████▌| 1045/1091 [00:24<00:01, 44.07it/s][A
+Featurizing q:  96%|█████████▌| 1050/1091 [00:24<00:00, 44.02it/s][A
+Featurizing q:  97%|█████████▋| 1055/1091 [00:24<00:00, 44.02it/s][A
+Featurizing q:  97%|█████████▋| 1060/1091 [00:24<00:00, 43.79it/s][A
+Featurizing q:  98%|█████████▊| 1065/1091 [00:24<00:00, 43.89it/s][A
+Featurizing q:  98%|█████████▊| 1070/1091 [00:25<00:00, 43.78it/s][A
+Featurizing q:  99%|█████████▊| 1075/1091 [00:25<00:00, 41.64it/s][A
+Featurizing q:  99%|█████████▉| 1080/1091 [00:25<00:00, 42.09it/s][A
+Featurizing q:  99%|█████████▉| 1085/1091 [00:25<00:00, 42.77it/s][A
+Featurizing q: 100%|█████████▉| 1090/1091 [00:25<00:00, 42.20it/s][AFeaturizing q: 100%|██████████| 1091/1091 [00:25<00:00, 42.77it/s]WARNING clustering 2182 points to 109 centroids: please provide at least 4251 training points
+
+100%|██████████| 1/1 [03:50<00:00, 230.27s/it]100%|██████████| 1/1 [03:50<00:00, 230.27s/it]
+folder_path: /data/tzc/DiffuSeqs/DiffuSeq-posttrain/generation_outputs/diffuseq_qqp_h128_lr0.0001_t2000_sqrt_lossaware_seed109_qqp20230114-04:18:02/ema_0.9999_100000.pt.samples/adp_20/mbr.jsonl
+bleu_1: 0.5338474406028935
+bleu_2: 0.41433475776467815
+bleu_3: 0.3255806498367007
+bleu_4: 0.25813973614107494
+time_2_repetition_1: 0.011
+time_2_repetition_2: 0.0
+time_2_repetition_3: 0.0
+time_2_repetition_4: 0.0
+time_4_repetition_1: 0.0009
+time_4_repetition_2: 0.0
+time_4_repetition_3: 0.0
+time_4_repetition_4: 0.0
+self_bleu_1: 0.8450737778205804
+self_bleu_2: 0.5908585827747987
+self_bleu_3: 0.40464786115109597
+self_bleu_4: 0.283110916555994
+self_bleu_5: 0.20423766875015978
+rouge1: 0.6391414999961853
+rouge2: 0.39881399273872375
+rougeL: 0.6162080764770508
+text_ppls: 119.41726253494265
+gold_ppls: 83.84168201663252
+deltas: 0.3536934852600098
+mauve_score: 0.9563105101058178
+bert_prec: tensor(0.8553)
+bert_recall: tensor(0.8344)
+bert_f1: tensor(0.8435)
+sim: tensor(4.3357, device='cuda:0')
+dis_result4 {'distinct-1': '0.2243', 'distinct-2': '0.6456', 'distinct-3': '0.8232', 'distinct-4': '0.9153'}
+dis_result2 {'distinct-1': '0.2243', 'distinct-2': '0.6456', 'distinct-3': '0.8232', 'distinct-4': '0.9153'}
