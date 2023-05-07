@@ -222,9 +222,9 @@ class GaussianDiffusion:
             else:
                 self.down_map[rp] = lp + 1
                 rp -= 1
-#         print("simi_noise",simi_noise)
-#         print("self.down_map", self.down_map)
-#         print("self.up_map", self.up_map)
+        # print("simi_noise",simi_noise)
+        # print("self.down_map", self.down_map)
+        # print("self.up_map", self.up_map)
 
     def training_losses(self, model, loss_type, *args, **kwargs):
         self.model = model
@@ -812,7 +812,7 @@ class GaussianDiffusion:
         noise2 = th.randn_like(x_start)
         x_t_similar = self.q_sample(x_start, t_similar, noise=noise2, mask=input_ids_mask)
 
-        print(simi_penalty, t_similar[:5], t[:5], tt_mask[:5])  
+        # print(simi_penalty, t_similar[:5], t[:5], tt_mask[:5])  
         terms = {}
 
         target = x_start_mean
@@ -1093,7 +1093,7 @@ class GaussianDiffusion:
         # print(sigma.mean())
         sample = mean_pred + nonzero_mask * sigma * noise
         if langevin_fn:
-            print(t.shape)
+            # print(t.shape)
             sample=langevin_fn(sample, mean_pred, sigma, self.alphas_cumprod_prev[t[0]], t, x)
         
         if mask == None:
