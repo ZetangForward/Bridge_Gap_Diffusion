@@ -57,7 +57,7 @@ def main():
 
     # mycode
     args.diffusion_steps = args.step
-    args.ƒ = args.decode_respacing
+    args.timestep_respacing = args.decode_respacing
 
 
     logger.log("### Creating model and diffusion...")
@@ -128,7 +128,8 @@ _topl{args.top_l}_topk{args.top_k}_noisedl{args.noised_l}_scend{args.scale_end}_
     
     from tqdm import tqdm
 
-
+    # if args.ana_save: os.mkdir(f"/data/tzc/DiffuSeqs/myDiffuSeq/analyze_data/qqp-valid-embedding/{args.ana_save}")
+    
 
     t_lst = []
     for cond in tqdm(all_test_data):
