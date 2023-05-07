@@ -222,9 +222,9 @@ class GaussianDiffusion:
             else:
                 self.down_map[rp] = lp + 1
                 rp -= 1
-        print("simi_noise",simi_noise)
-        print("self.down_map", self.down_map)
-        print("self.up_map", self.up_map)
+#         print("simi_noise",simi_noise)
+#         print("self.down_map", self.down_map)
+#         print("self.up_map", self.up_map)
 
     def training_losses(self, model, loss_type, *args, **kwargs):
         self.model = model
