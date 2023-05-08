@@ -36,7 +36,7 @@ Please refer to the following repos for more details:
 
 
 # Quick Start
-We provide the code for post-training on ROC story dataset
+We provide the code for post-training on QQP (Paraphrase) dataset
 
 ## Environment
 ```
