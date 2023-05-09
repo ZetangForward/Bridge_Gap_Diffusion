@@ -1,6 +1,6 @@
 # Bridging the Gap between Training and Inference for Diffusion Model
 
-This is the official code for [<font size=3>Can Diffusion Model Achieve Better Performance in Text Generation? Bridging the Gap between Training and Inference!</font>]() (release soon)
+This is the official code for [<font size=3>Can Diffusion Model Achieve Better Performance in Text Generation? Bridging the Gap between Training and Inference!</font>](https://arxiv.org/pdf/2305.04465.pdf) 
 
 # Highlight
 
