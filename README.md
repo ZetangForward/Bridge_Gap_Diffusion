@@ -4,10 +4,15 @@ This is the official code for [<font size=3>Can Diffusion Model Achieve Better P
 
 # Highlight
 
+1. One can post-train your own diffusion model with two methods below to ``accelerate the inference`` speed and ``achieve better performance`` ! 
+
+2. Extensive experiments show our method can generate a full sequence with 128 tokens in only ``4`` denoising steps !
+
 ## Model Architecture
 <p align="center"><img src="./assets/model_arch.png" alt="Logo"></p>
 
-## Down-Sampling Strategy
+## Down-Sampling Strategy 
+
 <p align="center"><img src="./assets/adaptive_sampling.png" alt="Logo"></p>
 
 # Dataset & Model Prepartion
