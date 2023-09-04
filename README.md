@@ -37,7 +37,7 @@ Please refer to the following repos for more details:
 
 [Diffusion-LM Improves Controllable Text Generation](https://github.com/XiangLi1999/Diffusion-LM)
 
-``Note`` We also provide the one post-trained model [link](https://drive.google.com/drive/folders/1UvcN9mKOv-nVZuQpJaAOQWCG22sGk_2O?usp=sharing) for quick check
+``Note`` We also provide the two post-trained models [link](https://drive.google.com/drive/folders/1UvcN9mKOv-nVZuQpJaAOQWCG22sGk_2O?usp=sharing) for quick check
 
 
 # Quick Start
